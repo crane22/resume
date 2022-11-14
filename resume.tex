@@ -1,53 +1,73 @@
 % !TEX program = xelatex
-
 \documentclass{resume}
+\usepackage{hyperref}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
-
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
 
+\name{GUO Yaowei}
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \phone{(+86) 186-0096-3933}
+  \  \textperiodcentered \:
+  \email{i@crane.moe}
+  \  \textperiodcentered \:
+  \github[@crane22]{https://github.com/crane22}
+  %\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+}
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\section{\faGraduationCap \: Education}
+\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, B. Eng.}{2019.09 -- 2023.06 (Expected)}
+\datedsubsection{Major in \textbf{Information Engineering}, \textit{School of Information and Commuication Eng.}}{Beijing, China}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+    \item \textbf{GPA}: 3.2/4.0
+    \item \textbf{Award}: Third-class Scholarship, Outstanding Class Cadre
+    \item \textbf{Key Courses}: Pattern Recognition and its Applications(93), Network Theory Basics(91), Web Search(94), Big Data Applications and Experiments(90), etc
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Minor}{2020.01 -- 2023.06 (Expected)}
+\datedsubsection{Research Topic: \textbf{Smart Traffic}, \textit{School of YE Peida Innovation and Entrepreneurship}}{Beijing, China}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+    \item \textbf{Lab}: YE Peida Innovation Lab, supervised by \href{https://teacher.bupt.edu.cn/dai/zh_CN/index.htm}{Prof.DAI Zhitao}
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+
+\section{\faSearch \: Research Experience}
+\datedsubsection{\textbf{Covid-19 Data Analysis and Prediction}}{2022.05 -- 2022.06}
+\datedsubsection{An Individual Project}{\textit{Full-stack Development}}
+Fetch Covid-19 data from China's National Health Commission, and predict data using machine learning. 
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item Predict Sequential Data using LSTM and GRU
+  \item The training procedure was enhanced by \href{https://github.com/microsoft/nni}{microsoft/nni}
+  \item \github[crane22/Covid-19\_ChinaMainland\_Prediction\_LSTM-GRU]{https://github.com/crane22/Covid-19_ChinaMainland_Prediction_LSTM-GRU}
 \end{itemize}
 
+\datedsubsection{\textbf{Traffic Violation Capture Drone}}{2021.08 -- 2022.07}
+\datedsubsection{A \textit{YE Peida Innovation Lab} Project}{\textit{Algorithm (Python)}}
+Get a video stream from a drone, and analyze whether there is a parking violation.  \textbf{This project won the second prize in the "Internet +" Competition Beijing area.} There are three divided modules:
+\begin{itemize}
+  \item A Semantic Segmentation method based on \href{https://arxiv.org/abs/2205.08534v3}{ViT} to differentiate vehicle from the environment
+  \item An \href{https://github.com/open-mmlab/mmflow}{Optical Flow motion analyzer} based on \href{https://arxiv.org/abs/2104.02409}{GMA} to detect whether the vehicle is moving or parked
+  \item A lane detector based on \href{https://arxiv.org/abs/1804.02767}{YOLOv3} to judge whether the vehicle parked at a legitimate place
+\end{itemize}
+
+\datedsubsection{\textbf{Human Body Detection System}}{2021.06 -- 2022.06}
+\datedsubsection{A Lab Project}{\textit{Leader and Algorithm}}
+An End-to-end solution of human body detection using Depth Cameras.
+\begin{itemize}
+  \item Make our own dataset using two re-programmed Depth Cameras。 
+  \item Test a few Object Detection Models on it, like \href{https://arxiv.org/abs/1804.02767}{YOLOv3}, \href{https://arxiv.org/abs/1512.02325v5}{SSD}, and \href{https://arxiv.org/abs/1506.01497v3}{Faster-RCNN}.
+\end{itemize}
+
+\datedsubsection{\textbf{A Face Recognition Door Guard}}{2019.09 -- 2020.01}
+\datedsubsection{An Individual Project}{\textit{Hardware and Python}}
+A simple Face Recognition Door Guard System ran on a RaspberryPi using OpenCV.
+\begin{itemize}
+  \item Real time face recognition based on OpenCV Library. 
+  \item \github[crane22/FaceRecognitionDoorGuard\_Prototype]{https://github.com/crane22/FaceRecognitionDoorGuard_Prototype}
+\end{itemize}
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
@@ -55,23 +75,47 @@ An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 %  \item main contribution
 %\end{itemize}
 
+
+% \section{\faUsers \: Work Experience}
+% \datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
+% \role{Summer Intern}{Manager: xxx}
+% Brief introduction: xxx.
+% \begin{itemize}
+%   \item Implemented xxx feature
+%   \item Optimized xxx 5\%
+%   \item xxx
+% \end{itemize}
+
+
+% \section{\faStarO \: Open-Source Contributions}
+% \datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
+% \role{\LaTeX, Maintainer}{Individual Projects}
+% An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+% \begin{itemize}
+%   \item Easy to be further customized or extended
+%   \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+%   \item FontAwesome 4.5.0 support
+% \end{itemize}
+
+
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item \textbf{Programming Languages}: Experienced in \textbf{Python} and \textbf{C/C++}, Comfortable with \textbf{Java} and \textbf{Rust}, but not limited to any specific language.
+  \item \textbf{Developing Tools and Platforms}: Experienced in \textbf{Linux-based programming}, have experience with team tools like \textbf{Git}.
+  \item \textbf{Human Languages}: \textbf{Mandarin} - Native speaker, \textbf{English} - Fluent (CET-6 scored 566 points)
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
 
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
+% \section{\faHeartO\ Honors and Awards}
+% \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+% \datedline{Other awards}{2015}
+
+
+% \section{\faInfo\ Miscellaneous}
+% \begin{itemize}[parsep=0.5ex]
+%   \item 
+% \end{itemize}
+
 
 %% Reference
 %\newpage
