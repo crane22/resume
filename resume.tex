@@ -1,21 +1,20 @@
 % !TEX program = xelatex
 \documentclass{resume}
 \usepackage{hyperref}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
-\pagenumbering{gobble} % suppress displaying page number
+\pagenumbering{gobble}          % suppress displaying page number
 
 
 \name{GUO Yaowei}
 \basicInfo{
-  \phone{(+86) 186-0096-3933}
-  \  \textperiodcentered \:
-  \email{i@crane.moe}
-  \  \textperiodcentered \:
-  \github[@crane22]{https://github.com/crane22}
-  %\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
+    \phone{(+86) 186-0096-3933}
+    \  \textperiodcentered \:
+    \email{i@crane.moe}
+    \  \textperiodcentered \:
+    \github[@crane22]{https://github.com/crane22}
+    % \  \textperiodcentered \:
+    % \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}
 }
 
 
@@ -38,43 +37,44 @@
 \section{\faSearch \: Research Experience}
 \datedsubsection{\textbf{Covid-19 Data Analysis and Prediction}}{2022.05 -- 2022.06}
 \datedsubsection{An Individual Project}{\textit{Full-stack Development}}
-Fetch Covid-19 data from China's National Health Commission, and predict data by machine learning. 
+Fetch Covid-19 data from China's National Health Commission, and predict data with accuracy of $\sim$85\%.
 \begin{itemize}
-  \item Predict Sequential Data with LSTM and GRU
-  \item The training procedure is enhanced by \href{https://github.com/microsoft/nni}{microsoft/nni}
-  \item \github[crane22/Covid-19\_ChinaMainland\_Prediction\_LSTM-GRU]{https://github.com/crane22/Covid-19_ChinaMainland_Prediction_LSTM-GRU}
+    \item \textbf{Predictive Modeling}: Predict Sequential Data with LSTM and GRU
+    \item \textbf{AutoML Procedure}: Deploy AutoML framework  (\href{https://github.com/microsoft/nni}{microsoft/nni}) and reduce tuning time by $\sim$30\%.
+    \item \github[crane22/Covid-19\_ChinaMainland\_Prediction\_LSTM-GRU]{https://github.com/crane22/Covid-19_ChinaMainland_Prediction_LSTM-GRU}
 \end{itemize}
 
 \datedsubsection{\textbf{Parking Violation Capture Drone}}{2021.08 -- 2022.07}
 \datedsubsection{A \textit{YE Peida Innovation Lab} Project}{\textit{Algorithm (Python)}}
-Get a video stream from a drone, and analyze whether there is a parking violation.  \textbf{This project won the second prize in the "Internet +" Competition Beijing area.} There are three divided modules:
+Detect parking violation on a drone. \textbf{The project won the \nth{2} prize in the "Internet+" Competition.}
 \begin{itemize}
-  \item A Semantic Segmentation method based on \href{https://arxiv.org/abs/2205.08534v3}{ViT} to differentiate vehicle from the environment
-  \item An \href{https://github.com/open-mmlab/mmflow}{Optical Flow motion analyzer} based on \href{https://arxiv.org/abs/2104.02409}{GMA} to detect whether the vehicle is moving or parked
-  \item A lane detector based on \href{https://arxiv.org/abs/1804.02767}{YOLOv3} to judge whether the vehicle parked at a legitimate place
+    \item \textbf{System Design and Development}: Design and develop the system in three divided modules:
+    \item A Semantic Segmentation method based on \href{https://arxiv.org/abs/2205.08534v3}{ViT} to differentiate vehicle from the environment
+    \item An \href{https://github.com/open-mmlab/mmflow}{Optical Flow motion analyzer} based on \href{https://arxiv.org/abs/2104.02409}{GMA} to detect whether the vehicle is moving or parked
+    \item A lane detector based on \href{https://arxiv.org/abs/1804.02767}{YOLOv3} to judge whether the vehicle parked at a legitimate place
 \end{itemize}
 
 \datedsubsection{\textbf{Human Body Detection System}}{2021.06 -- 2022.06}
 \datedsubsection{A Lab Project}{\textit{Leader and Algorithm}}
-An End-to-end solution of human body detection on Depth Cameras.
+An end-to-end solution of human body detection on Depth Cameras.
 \begin{itemize}
-  \item Build our own dataset using two re-programmed Depth Cameras. 
-  \item Benchmark a few Object Detection Models on it, like \href{https://arxiv.org/abs/1804.02767}{YOLOv3}, \href{https://arxiv.org/abs/1512.02325v5}{SSD}, and \href{https://arxiv.org/abs/1506.01497v3}{Faster-RCNN}.
+    \item \textbf{Dataset Building} and \textbf{Data Collation}: Collect data and build a dataset on two Depth Cameras.
+    \item \textbf{Solution Delivery}: Design an end-to-end solution based on models like YOLOv3, SSD and Faster-RCNN.
 \end{itemize}
 
-\datedsubsection{\textbf{A Face Recognition Door Guard}}{2019.09 -- 2020.01}
+\datedsubsection{\textbf{Face Recognition Door Guard}}{2019.09 -- 2020.01}
 \datedsubsection{An Individual Project}{\textit{Hardware and Python}}
-A simple Face Recognition Door Guard System runs on a RaspberryPi.
+A simple Face Recognition Door Guard runs on a RaspberryPi and an Arduino Uno.
 \begin{itemize}
-  \item Real time face recognition based on OpenCV Library. 
-  \item \github[crane22/FaceRecognitionDoorGuard\_Prototype]{https://github.com/crane22/FaceRecognitionDoorGuard_Prototype}
+    \item \textbf{System Design}: Utilized Haar Cascade classifier to implement a real-time face recognition using OpenCV. 
+    \item \github[crane22/FaceRecognitionDoorGuard\_Prototype]{https://github.com/crane22/FaceRecognitionDoorGuard_Prototype}
 \end{itemize}
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+% % Reference Test
+% \datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+% An xxx optimized for xxx\cite{verma2015large}
+% \begin{itemize}
+%     \item main contribution
+% \end{itemize}
 
 
 % \section{\faUsers \: Work Experience}
@@ -82,9 +82,9 @@ A simple Face Recognition Door Guard System runs on a RaspberryPi.
 % \role{Summer Intern}{Manager: xxx}
 % Brief introduction: xxx.
 % \begin{itemize}
-%   \item Implemented xxx feature
-%   \item Optimized xxx 5\%
-%   \item xxx
+%     \item Implemented xxx feature
+%     \item Optimized xxx 5\%
+%     \item xxx
 % \end{itemize}
 
 
@@ -93,33 +93,34 @@ A simple Face Recognition Door Guard System runs on a RaspberryPi.
 % \role{\LaTeX, Maintainer}{Individual Projects}
 % An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
 % \begin{itemize}
-%   \item Easy to be further customized or extended
-%   \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-%   \item FontAwesome 4.5.0 support
+%     \item Easy to be further customized or extended
+%     \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
+%     \item FontAwesome 4.5.0 support
 % \end{itemize}
 
 
-\section{\faCogs\ Skills}
+\section{\faCogs \: Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item \textbf{Programming Languages}: Experienced in \textbf{Python} and \textbf{C/C++}, Comfortable with \textbf{Java} and \textbf{Rust}, but not limited to any specific language.
-  \item \textbf{Developing Tools and Platforms}: Experienced in \textbf{Linux-based programming}, and also have experience with tools like \textbf{Git} and \textbf{docker}.
-  \item \textbf{Human Languages}: \textbf{Mandarin} - Native speaker, \textbf{English} - Fluent (CET-6 scored 566 points)
+    \item \textbf{Programming Languages}: Experienced in \textbf{Python} and \textbf{C/C++}, comfortable with \textbf{Java} and \textbf{Rust}, but not limited to any specific language.
+    \item \textbf{Machine Learning}: Experienced in frameworks like \textbf{Pytorch} and \textbf{NumPy}, and AutoML tools like \textbf{NNI}.
+    \item \textbf{Developing Tools and Platforms}: Experienced in \textbf{Linux-based programming}, and tools like \textbf{Git}.
+    \item \textbf{Human Languages}: \textbf{Mandarin} - Native speaker,  \textbf{English} - Fluent (CET-6 scored 566 points)
 \end{itemize}
 
 
-% \section{\faHeartO\ Honors and Awards}
+% \section{\faHeartO \: Honors and Awards}
 % \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
 % \datedline{Other awards}{2015}
 
 
-% \section{\faInfo\ Miscellaneous}
+% \section{\faInfo \: Miscellaneous}
 % \begin{itemize}[parsep=0.5ex]
-%   \item 
+%     \item 
 % \end{itemize}
 
 
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
+% % Reference
+% \newpage
+% \bibliographystyle{IEEETran}
+% \bibliography{mycite}
 \end{document}
